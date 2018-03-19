@@ -16,6 +16,7 @@ import java.util.Properties;
 
 public final class Helper {
 
+    //pobieranie danych z pliku konfiguracyjnego
         public static String getProperty(String key,Context context) throws IOException {
             Properties properties = new Properties();;
             AssetManager assetManager = context.getAssets();
@@ -23,6 +24,4 @@ public final class Helper {
             properties.load(inputStream);
             return properties.getProperty(key);
         }
-
-
 }
