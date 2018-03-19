@@ -22,7 +22,7 @@ public final class Helper {
             InputStream inputStream = assetManager.open("config.properties");
             properties.load(inputStream);
             return properties.getProperty(key);
-
-
         }
+
+
 }

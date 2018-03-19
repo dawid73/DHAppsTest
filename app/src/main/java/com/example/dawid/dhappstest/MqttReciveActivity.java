@@ -16,4 +16,9 @@ public class MqttReciveActivity extends AppCompatActivity {
     public void dupa(View v){
         Toast.makeText(MqttReciveActivity.this, "kliknieto guzik", Toast.LENGTH_LONG).show();
     }
+
+    @Override
+    public String toString(){
+        return "test";
+    }
 }
