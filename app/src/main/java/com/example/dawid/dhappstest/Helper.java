@@ -13,6 +13,7 @@ import java.util.Properties;
  * Created by Dawid on 19.03.2018.
  */
 
+
 public final class Helper {
 
         public static String getProperty(String key,Context context) throws IOException {
@@ -21,6 +22,7 @@ public final class Helper {
             InputStream inputStream = assetManager.open("config.properties");
             properties.load(inputStream);
             return properties.getProperty(key);
+
 
         }
 }
